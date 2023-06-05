@@ -5,8 +5,6 @@ color: black
 fa-icon: camera
 ---
 
-# Impressionen
-
 ![innen](img/innen.jpg)  
 Gästezimmer Nord mit Küchenzeile
 

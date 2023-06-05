@@ -34,6 +34,9 @@ colors:
   warmesgelb: "#fcd749"
   hellgrau: "#d7d9d7"
 
+css_variables:
+  sectiondivider_width: 270
+
 kramdown:
   auto_ids: false
 # plugins:
