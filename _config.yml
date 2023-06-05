@@ -11,7 +11,7 @@ lsi: false
 markdown: kramdown
 
 ### content configuration ###
-title: "A great home page"
+title: "Heimseite der Wohngemeinschaft B33:::"
 keywords: "wohnen"
 description: "alles auf einer Seite"
 source_link: "https://github.com/b33ev"

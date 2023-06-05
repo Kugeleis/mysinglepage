@@ -50,4 +50,4 @@ resulting in
 
 ## Embedded maps
 
-Github pages only allows some jekyll **plugins** and also blocks **iframes**. This makes including interactive maps hard. One workaround I found is to compile a version with the desired plugin (jekyll-leaflet) locally and then take the HTML part as a 'include'. Just place the html file in the \_includes folder and use it in your markdown with `{% include mymap.html %}`.
+Github pages only allows some jekyll **plugins** and also blocks **iframes**. This makes including interactive maps hard. One workaround I found is to compile a version with the desired plugin (jekyll-leaflet) locally and then take the HTML part as a 'include'. Just place the html file in the \_includes folder and use it in your markdown with `\{\% include mymap.html \%\}`.
