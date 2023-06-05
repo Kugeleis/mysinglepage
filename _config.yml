@@ -36,6 +36,5 @@ colors:
 
 kramdown:
   auto_ids: false
-
-plugins:
-  - jekyll-leaflet
+# plugins:
+# - jekyll-leaflet
