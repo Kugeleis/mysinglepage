@@ -7,13 +7,13 @@ fa-icon: camera
 
 # Impressionen
 
-![innen](../img/innen.jpg)  
+![innen](img/innen.jpg)  
 Gästezimmer Nord mit Küchenzeile
 
-![Bett](../img/bed.jpg)  
+![Bett](img/bed.jpg)  
 jedes Zimmer mit Doppelbett (1,60m breit) und eigenem Dusch-Bad
 
-![Straße](../img/street.jpg)  
+![Straße](img/street.jpg)  
 Fassade nach Süden an der verkehrsberuhigten Böhmischen Straße
 
 <style>
