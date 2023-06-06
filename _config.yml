@@ -37,6 +37,9 @@ colors:
 css_variables:
   sectiondivider_width: 270
 
+sass:
+  style: compressed
+
 kramdown:
   auto_ids: false
 # plugins:

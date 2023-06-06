@@ -1,0 +1,67 @@
+/* ---------------------------
+/* ----- Main Structure -----
+/* ---------------------------
+
+html
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+
+  &:before, &:after
+    box-sizing: inherit
+
+/* ----- top menu -----
+
+/* {% assign navborder = 3 %}
+/* {% assign navborder_active = 6 %}
+
+nav
+  font-size: 15px
+  width: 100%
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  background: #2e2e2e
+
+  ul
+    list-style: none
+    text-align: center
+    padding: 0
+    margin: 0
+    letter-spacing: -4px
+
+    li
+      display: inline-block
+      border-top: 3px solid
+      padding: 3px
+      *display: inline
+      zoom: 1
+      line-height: normal
+      letter-spacing: normal
+      text-transform: uppercase
+      min-width: 110px
+      line-height: 60px
+      margin: 0
+
+      a
+        display: block
+        color: #fff
+        text-decoration: none
+        font-weight: 600
+        opacity: .75
+
+        &:visited
+          display: block
+          color: #fff
+          text-decoration: none
+          font-weight: 600
+          opacity: .75
+
+        &:hover
+          opacity: 1
+
+      &:hover, &.active
+        border-top-width: 6px
+        padding-top: 0

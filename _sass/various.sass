@@ -1,0 +1,101 @@
+/* ----- code, syntax highlighting, etc -----
+
+code, pre
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace
+
+/* spesifically inline code
+
+code
+  background: rgba(255, 255, 255, 0.2)
+  display: inline
+  word-wrap: break-word
+
+pre
+  background: rgba(255, 255, 255, 0.2)
+  display: inline
+  word-wrap: break-word
+
+  code
+    background: none
+    display: block
+
+  display: block
+  margin: 20px 5%
+  padding: 4px 8px
+  background: rgba(255, 255, 255, 0.1)
+  word-wrap: break-word
+
+/* block code
+
+.highlight
+  margin: 20px 5%
+
+/* ----- base elements -----
+
+img
+  max-width: 100% !important
+  height: auto
+  vertical-align: middle
+
+hr
+  margin: 60px auto
+  width: 50%
+
+  /* border-color: {{ site.colors.black }};
+  border-color: black
+
+.container
+  word-wrap: break-word
+
+.center
+  text-align: center
+
+.left
+  text-align: left
+
+.container
+  .left
+    text-align: left
+
+  h1, h2, h3, h4
+    margin-bottom: 20px
+    text-align: center
+    padding: 0 4%
+
+  p, ol, ul
+    font-size: 17px
+    padding: 0 5%
+
+  ol, ul
+    padding: 0 8%
+
+  p:first-of-type
+    margin-top: 40px
+
+/* keep embedded videos fluid!
+
+.icontain
+  position: relative
+  height: 0
+  overflow: hidden
+  padding-bottom: 56.25%
+
+  /* keep 16x9 Aspect Ratio
+
+.i4x3
+  padding-bottom: 75.00%
+
+/* keep 4x3 Aspect Ratio
+
+.icontain iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.inlineblock
+  display: -moz-inline-stack
+  display: inline-block
+  zoom: 1
+  *display: inline
