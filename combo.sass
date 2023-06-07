@@ -3,10 +3,10 @@
 ---
 
 //site variables
-@each $node in $site.posts {
-  $id: $node.id | remove: '/' | downcase;
-  $bg: if($site.colors[$node.bg], $site.colors[$node.bg], $node.bg);
-  $fg: if($site.colors[$node.color], $site.colors[$node.color], $node.color);
+@each $post in {{ site.posts }} {
+  $id: $post.id | remove: '/' | downcase;
+  $bg: if($site.colors[$post.bg], $site.colors[$post.bg], $post.bg);
+  $fg: if($site.colors[$post.color], $site.colors[$post.color], $post.color);
 
   nav .p-#{$id} {
     border-color: $bg;
