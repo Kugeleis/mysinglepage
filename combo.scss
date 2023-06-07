@@ -1,0 +1,69 @@
+---
+
+---
+
+/* ----- per-post colors! ----- */
+{% for node in site.posts %}
+  {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+  {% capture bg %}{% if site.colors[node.bg] %}{{ site.colors[node.bg] }}{% else %}{{ node.bg }}{% endif %}{% endcapture %}
+  {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
+  nav .p-{{id}} { 
+    border-color: {{ bg }}; 
+    }
+  #{{id}} { 
+    background-color: {{ bg }} !important; 
+    color: {{ fg }}; 
+    }
+  #{{id}} a { 
+    color: {{ fg }}; 
+    }
+  #{{id}} .sectiondivider { 
+    color: {{ bg }}; 
+    }
+{% endfor %}
+
+
+// Colors
+$colors: (
+  "black": "#111111",
+  "white": "#f8f8f8",
+  "blue": "#49a7e9",
+  "green": "#9bcf2f",
+  "purple": "#c869bf",
+  "orange": "#fab125",
+  "turquoise": "#0fbfcf",
+  "grau": "#BCBDBB",
+  "hellgruen": "#c3c20b",
+  "zitronengelb": "#edd645",
+  "warmesgelb": "#fcd749",
+  "hellgrau": "#d7d9d7"
+);
+
+@each $color, $value in $colors {
+  .border-#{$color} {
+    border-color: #{$value} !important;
+  }
+
+  .text-#{$color} {
+    color: #{$value};
+    a {
+      color: #{$value};
+    }
+  }
+
+  .bg-#{$color} {
+    background-color: #{$value} !important;
+  }
+}
+
+
+@import 'base.sass';
+@import 'main.sass';
+@import 'media.sass';
+@import 'section.sass';
+@import 'skeleton.sass';
+// @import 'variables.sass';
+@import 'various.sass';
+
+// CSS Variables
+$sectiondivider_width: 270
