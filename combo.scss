@@ -56,12 +56,11 @@ $colors: (
   }
 }
 
-
 @import 'base.sass';
 @import 'main.sass';
+@import 'skeleton.sass';
 @import 'media.sass';
 @import 'section.sass';
-@import 'skeleton.sass';
 // @import 'variables.sass';
 @import 'various.sass';
 
